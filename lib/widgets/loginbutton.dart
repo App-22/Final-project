@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 class LoginButton extends StatelessWidget {
   const LoginButton({super.key});
 
@@ -16,7 +16,9 @@ class LoginButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(18),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+            context.go('/home');
+        },
         child: const Text(
           "Login",
           style: TextStyle(
